@@ -62,8 +62,5 @@ public class Movimientos {
 	public void setUser(Users user) {
 		this.user = user;
 	}
-
-
-
     
 }
