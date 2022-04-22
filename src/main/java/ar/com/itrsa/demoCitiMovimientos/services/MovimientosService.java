@@ -12,7 +12,7 @@ public class MovimientosService {
     @Autowired
     MovimientosRepository movimientosRepository;
 
-    public List<Movimientos> list() {
-        return movimientosRepository.findAll();
+    public List<Movimientos> list(Integer id) {
+        return movimientosRepository.findByUserId(id);
     }
 }
