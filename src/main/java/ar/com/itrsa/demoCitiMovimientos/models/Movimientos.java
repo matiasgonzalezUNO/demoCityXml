@@ -23,4 +23,15 @@ public class Movimientos {
 
     private int importe;
 
+    @ManyToOne
+    private Users user;
+
+    public Movimientos(Date utilDate, String concepto, int importe, Users user) {
+        this.utilDate = utilDate;
+        this.concepto = concepto;
+        this.importe = importe;
+        this.user = user;
+
+    }
+
 }
